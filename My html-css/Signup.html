@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250vh;
+    }
+
+    .box {
+      width: 450px;
+      padding: 20px;
+      border: 1px solid #none;
+      border-radius: 6px;
+      background-color: #none;
+    }
+
+    .box h2 {
+      text-align: center;
+    }
+
+    .box label {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    .box input[type="text"],
+    .box input[type="email"],
+    .box textarea {
+      width: 100%;
+      padding: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .box input[type="radio"],
+    .box input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .box input[type="submit"] {
+      background-color: #19A7CE;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+		<div class="row center" style="margin-top: 40px;">
+			<body style="background-image:url('Mondstat.jpeg');background-repeat: no-repeat 100%;">
+			</body>
+		</div>
+      <h2>Sign Up Traveler</h2>
+      <form action="index.php" method="POST">
+	  <center>
+        <b><label for="name">Name:</b></label>
+			<input type="text" id="name" name="name" required>
+			
+		<b><label for="name">Middle Name:</b></label>
+			<input type="text" id="name" name="name" required>
+			
+		<b><label for="name">Last Name:</b></label>
+			<input type="text" id="name" name="name" required>
+
+			<b><label for="email">Email:</b></label>
+        <input type="email" id="email" name="email" required>
+		
+        <b><label for="age">Age:</label></b>
+			<input type="number" id="age" name="age" min="18" required>
+		
+			<b><label for="dob">Date of Birth:</b></label>
+        <input type="date" id="dob" name="dob" required>
+		
+        <b><label for="gender"> Gender:</label></b>
+			<select id="gender" name="gender" required>
+				<option value="">Select...</option>
+					<option value="male">Male</option>
+				<option value="female">Female</option>
+			<option value="other">Other</option>
+        </select>
+		</center>
+		
+        <b><label for="feedback">How is life in Genshin?: </b></label>
+			<textarea id="feedback" name="feedback" rows="4.5" required></textarea>
+
+		<b>
+			<label> 1.) What is your favorite Nation in Genshin (Check all if necessary)</label>
+				<label><input type="checkbox" name="languages" value="Mondstadt"> Mondstadt </label>
+					<label><input type="checkbox" name="languages" value="Liyue"> Liyue </label>
+				<label><input type="checkbox" name="languages" value="Inazuma"> Inazuma </label>
+			<label><input type="checkbox" name="languages" value="Sumeru"> Sumeru </label>
+		<label><input type="checkbox" name="languages" value="Sumeru"> Fontaine </label>
+		</b>
+		
+		<b>
+			<label> 2.) What Element do you wish to have? </label>
+				<label><input type="radio" name="environment" value="Anemo"> Anemo </label>
+					<label><input type="radio" name="environment" value="Electro"> Electro </label>
+						<label><input type="radio" name="environment" value="Hydro"> Hydro </label>
+						<label><input type="radio" name="environment" value="Geo"> Geo </label>							<label><input type="radio" name="environment" value="Pyro"> Pyro </label>
+				<label><input type="radio" name="environment" value="Cryo"> Cryo </label>
+			<label><input type="radio" name="environment" value="Dendro"> Dendro </label>
+		</b>
+		
+		<b>
+			<label> 3.) What is your Ideal Nation in Genshin? </label>
+				<label><input type="radio" name="environment" value="Freedom"> Freedom </label>
+					<label><input type="radio" name="environment" value="Contracts"> Contracts </label>
+						<label><input type="radio" name="environment" value="Eternity"> Eternity </label>
+				<label><input type="radio" name="environment" value="Wisdom"> Wisdom </label>							<label><input type="radio" name="environment" value="Pyro"> Pyro </label>
+			<label><input type="radio" name="environment" value="Justice"> Justice </label>
+		</b>
+		
+		<b>
+			<label> 4.) What Govering Faction do you want in Genshin?(Select 2 only!)</label>
+				<label><input type="checkbox" name="languages" value="Knights of Favonius"> Knights of Favonius </label>
+					<label><input type="checkbox" name="languages" value="Liyue Qixing"> Liyue Qixing </label>
+				<label><input type="checkbox" name="languages" value="Tri-Commission"> Tri-Commission </label>
+			<label><input type="checkbox" name="languages" value="Sumeru Akademiya"> Sumeru Akademiya </label>
+		<label><input type="checkbox" name="languages" value="Uknown"> Unknown </label>
+		</b>
+		<center>
+			<p><b><label>Have Fun Travelling through Teyvat's Seven Nations </p></b></label>
+		</center>
+		
+		<center>
+			<input type="submit" value="Submit">
+		</center>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

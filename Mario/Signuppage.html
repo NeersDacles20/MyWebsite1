@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jaboya Page</title>
+		
+			<style>
+				body {
+            margin: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			}
+				form {
+            width: 400px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			}
+			input[type="text"],
+			input[type="password"],
+			input[type="email"],
+				select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 16px;
+			}
+				input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+			}
+				input[type="submit"]:hover {
+            background-color: #3e8e41;
+			}
+			</style>
+	</head>
+<body>
+    <form action="process-form.php" method="POST">
+			<center>
+			<h1> Hello There Welcome!</h1>
+			</center>
+				<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required>
+						<label for="password">Password:</label>
+							<input type="password" id="password" name="password" required>
+					<p>Don't have an account? <a href="SignUp.html">Sign Up here</a></p>
+	
+		<center>
+			<input type="submit" value="SignIn">
+			<a href="index.html"></a>
+		</center>
+		
+    </form>
+	
+	</body>
+</html>
